@@ -40,7 +40,7 @@ function Form() {
   const fetchData = () => {
     setOpen(true)
     axios
-    .post("http://localhost:3000/rate-book", data)
+    .post("https://book-match-backend.onrender.com/rate-book", data)
     .then( async(res) => {
         setBookDetail(res.data.matched_books)
     });
